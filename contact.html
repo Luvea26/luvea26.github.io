@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | LUVEA</title><meta name="description" content="LUVEA — Art You Can Feel. Accessories, Candles and Home Accessories.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">✦ Free shipping on orders over 1000 EGP ✦</div>
+<header class="nav"><div class="container nav-inner">
+<nav class="nav-links"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="about.html">About</a></nav>
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="LUVEA logo"><span>LUVEA</span></a>
+<div class="nav-actions"><div class="desktop"><a href="collections.html">Shop</a> &nbsp; · &nbsp; <a href="contact.html">Contact</a></div><button class="btn light" onclick="openCart()">🛍 Cart <span id="cartCount"></span></button><button class="mobile-menu btn light" onclick="alert('Use the page links below to navigate LUVEA.')">☰</button></div>
+</div></header>
+
+<section class="page-hero"><div class="container"><div class="kicker">Get in touch</div><h1 style="font-size:64px">Contact Us</h1><p class="script">We’d love to hear from you.</p></div></section>
+<section class="section"><div class="container split"><div><div class="kicker">Contact information</div><h2>We’re here to help.</h2><div class="info-list">
+<div class="info"><strong>WhatsApp</strong><br>010 1933 6292<br><small>Best way to place an order</small></div>
+<div class="info"><strong>Instagram</strong><br><a href="https://instagram.com/luvea.26" target="_blank">@luvea.26</a></div>
+<div class="info"><strong>Location</strong><br>Online only<br><small>No physical store yet</small></div>
+</div><a class="btn" href="https://wa.me/201019336292?text=Hello%20LUVEA" target="_blank">Chat on WhatsApp →</a></div>
+<form class="form" onsubmit="event.preventDefault();window.open('https://wa.me/201019336292?text='+encodeURIComponent('Hello LUVEA, my name is '+this.name.value+'. '+this.message.value),'_blank')"><input name="name" placeholder="Full Name *" required><input name="phone" placeholder="Phone Number"><textarea name="message" placeholder="Your Message *" required></textarea><button class="btn" type="submit">Send via WhatsApp →</button></form></div></section>
+<section class="band"><div class="container section-head"><div class="kicker">Online boutique</div><h2>No shop yet — and that’s okay.</h2><p>For now, LUVEA is designed to be discovered, ordered and delivered online. When the physical space arrives, the website can evolve with it.</p></div></section>
+
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+<aside id="cart" class="cart-drawer"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:30px">Your Cart</h2><button onclick="closeCart()">✕</button></div><div id="cartItems"></div><hr><div style="display:flex;justify-content:space-between;font-size:20px"><strong>Subtotal</strong><strong id="cartTotal">EGP 0</strong></div><button class="btn" style="width:100%;margin-top:18px" onclick="orderWA()">Order via WhatsApp →</button><p style="font-size:13px;line-height:1.6">We'll confirm availability, delivery area and final order details with you on WhatsApp.</p></aside>
+<footer class="footer"><div class="container footer-grid">
+<div><h2 style="color:#fff4ed">LUVEA</h2><p>ART YOU CAN FEEL.</p><small>Little Things, Beautifully Made.</small></div>
+<div><strong>Quick Links</strong><p><a href="index.html">Home</a></p><p><a href="collections.html">Collections</a></p><p><a href="about.html">About</a></p><p><a href="contact.html">Contact</a></p></div>
+<div><strong>Order & Contact</strong><p>WhatsApp: 010 1933 6292</p><p><a href="https://instagram.com/luvea.26" target="_blank">@luvea.26</a></p><a class="btn" href="https://wa.me/201019336292?text=Hello%20LUVEA" target="_blank">Message LUVEA</a></div>
+<div><strong>Stay Connected</strong><p>Follow LUVEA for new drops and updates.</p><p><a href="https://instagram.com/luvea.26" target="_blank">Instagram</a></p><p>Facebook · TikTok · Pinterest</p></div>
+</div><div class="container footer-bottom"><small>© 2026 LUVEA. All rights reserved.</small><small>Small details. Big magic ♡</small></div></footer>
+<script src="script.js"></script>
+</body></html>

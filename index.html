@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home | LUVEA</title><meta name="description" content="LUVEA — Art You Can Feel. Accessories, Candles and Home Accessories.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">✦ Free shipping on orders over 1000 EGP ✦</div>
+<header class="nav"><div class="container nav-inner">
+<nav class="nav-links"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="about.html">About</a></nav>
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="LUVEA logo"><span>LUVEA</span></a>
+<div class="nav-actions"><div class="desktop"><a href="collections.html">Shop</a> &nbsp; · &nbsp; <a href="contact.html">Contact</a></div><button class="btn light" onclick="openCart()">🛍 Cart <span id="cartCount"></span></button><button class="mobile-menu btn light" onclick="alert('Use the page links below to navigate LUVEA.')">☰</button></div>
+</div></header>
+
+<section class="hero"><div class="hero-copy"><div class="kicker">Handmade with love</div><h1>Little Things,<br>Beautifully Made.</h1><p class="script">ART YOU CAN FEEL.</p><p style="font-size:19px;line-height:1.7;max-width:560px">Accessories, candles, and home accessories created to add warmth, beauty and a little LUVEA feeling to everyday life.</p><div><a class="btn" href="collections.html">Explore Collections →</a></div></div><div class="hero-photo"></div></section>
+<section class="section"><div class="container"><div class="section-head"><div class="kicker">Explore</div><h2>Our Collections</h2><p>Three worlds, one LUVEA feeling.</p></div>
+<div class="grid-3">
+<a class="category-card" href="collections.html#accessories"><img src="assets/accessories.jpg"><div class="category-overlay"><h3>Accessories</h3><p>Little details, big style.</p></div></a>
+<a class="category-card" href="collections.html#candles"><img src="assets/candles.jpg"><div class="category-overlay"><h3>Candles</h3><p>Light up your moments.</p></div></a>
+<a class="category-card" href="collections.html#home"><img src="assets/home-accessories.jpg"><div class="category-overlay"><h3>Home Accessories</h3><p>Beauty for your space.</p></div></a>
+</div></div></section>
+<section class="quote">“Art is not just what we create — it’s how we make you feel.”<div class="kicker" style="margin-top:20px;color:var(--mocha)">LUVEA</div></section>
+<section class="section"><div class="container"><div class="section-head"><div class="kicker">New</div><h2>Latest Candles</h2><p>Start with the pieces we designed to make a room feel warmer.</p></div><div class="grid-4">
+<div class="card"><img src="assets/hero-candle.jpg"><div class="card-body"><h3>Blossom Serenity</h3><div class="price">EGP 350</div><button class="btn" onclick="add('blossom')">Order via WhatsApp</button></div></div>
+<div class="card"><img src="assets/candle-1.jpg"><div class="card-body"><h3>Vanilla Bloom</h3><div class="price">EGP 320</div><button class="btn" onclick="add('vanilla')">Order via WhatsApp</button></div></div>
+<div class="card"><img src="assets/candle-2.jpg"><div class="card-body"><h3>Lavender Dreams</h3><div class="price">EGP 350</div><button class="btn" onclick="add('lavender')">Order via WhatsApp</button></div></div>
+<div class="card"><img src="assets/candle-3.jpg"><div class="card-body"><h3>Cinnamon Glow</h3><div class="price">EGP 330</div><button class="btn" onclick="add('cinnamon')">Order via WhatsApp</button></div></div>
+</div></div></section>
+<section class="band"><div class="container split"><img src="assets/home-accessories.jpg"><div><div class="kicker">The LUVEA feeling</div><h2>Made to be felt. Made to be loved.</h2><p style="font-size:18px;line-height:1.8">We’re building LUVEA as an online boutique where every small piece feels personal, warm and beautifully made.</p><a class="btn" href="about.html">Discover LUVEA →</a></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div class="kicker">Questions</div><h2>FAQ</h2></div><div class="faq">
+<details><summary>How do I place an order?</summary><p>Add products to your cart and choose “Order via WhatsApp”. We’ll confirm availability and delivery details.</p></details>
+<details><summary>Is LUVEA online only?</summary><p>Yes. LUVEA is currently an online boutique, with no physical retail location yet.</p></details>
+<details><summary>Do you offer delivery?</summary><p>Delivery details and fees are confirmed with you on WhatsApp based on your area.</p></details>
+<details><summary>Are the pieces handmade?</summary><p>LUVEA focuses on crafted, small-batch pieces and a handmade-inspired presentation.</p></details>
+</div></div></section>
+
+<div id="overlay" class="overlay" onclick="closeCart()"></div>
+<aside id="cart" class="cart-drawer"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:30px">Your Cart</h2><button onclick="closeCart()">✕</button></div><div id="cartItems"></div><hr><div style="display:flex;justify-content:space-between;font-size:20px"><strong>Subtotal</strong><strong id="cartTotal">EGP 0</strong></div><button class="btn" style="width:100%;margin-top:18px" onclick="orderWA()">Order via WhatsApp →</button><p style="font-size:13px;line-height:1.6">We'll confirm availability, delivery area and final order details with you on WhatsApp.</p></aside>
+<footer class="footer"><div class="container footer-grid">
+<div><h2 style="color:#fff4ed">LUVEA</h2><p>ART YOU CAN FEEL.</p><small>Little Things, Beautifully Made.</small></div>
+<div><strong>Quick Links</strong><p><a href="index.html">Home</a></p><p><a href="collections.html">Collections</a></p><p><a href="about.html">About</a></p><p><a href="contact.html">Contact</a></p></div>
+<div><strong>Order & Contact</strong><p>WhatsApp: 010 1933 6292</p><p><a href="https://instagram.com/luvea.26" target="_blank">@luvea.26</a></p><a class="btn" href="https://wa.me/201019336292?text=Hello%20LUVEA" target="_blank">Message LUVEA</a></div>
+<div><strong>Stay Connected</strong><p>Follow LUVEA for new drops and updates.</p><p><a href="https://instagram.com/luvea.26" target="_blank">Instagram</a></p><p>Facebook · TikTok · Pinterest</p></div>
+</div><div class="container footer-bottom"><small>© 2026 LUVEA. All rights reserved.</small><small>Small details. Big magic ♡</small></div></footer>
+<script src="script.js"></script>
+</body></html>
